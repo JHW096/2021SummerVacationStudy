@@ -1,0 +1,39 @@
+B조 2주차 과제
+※ 최대한 책을 참고하지 않고, 모르는 것은 빈칸으로 남기기.
+보기의 구조체를 사용하여 다음과 같은 함수를 만드시오.
+(보기)
+typedef int element
+
+typedef struct linkedlist {
+element data;
+linkedlist* link;
+}linkedlist
+
+typedef struct List {
+linkedlist* head;
+linkedlist* tail;
+int length;
+};
+
+(함수)
+1. void init(List* List) : 초기화
+
+2. void add(List* List, element val) : insert_last
+
+3. void add(List* List, int pos, element val) : insert
+
+4. bool contains(List* List, element val) : search
+
+5. element get(List* List, int pos) : get
+
+6. void remove(List* List, int pos) : remove
+
+7. int size(List* List) : get length
+
+8. void clear(List* List) : remove all
+
+9. bool isEmpty(List* List) : return ture/false(1/0)
+
++(challenge) 2개의 연결리스트 concat + merge를 동시에 하는 함수 구현
+void sort_list(List* List1, List* List2) 또는
+void sort_list(List* List1, List* List2, List* List3)
