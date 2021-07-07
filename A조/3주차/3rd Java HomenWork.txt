@@ -1,0 +1,22 @@
+Nyam's study 3rd Java Homework
+
+1. 영어 문장의 알파벳(소문자, 대문자 구분)하여 갯수와 소문자 + 대문자의 갯수도 출력하시오.
+
+exam)
+string str = new String("text");
+(결과)
+A = 2개, a = 6개, A + a = 8개
+B = 0개, b = 3개 B + b = 3개
+.
+.
+.
+Z = 0개, z = 1개, Z + z = 1개
+
+
+
+2. a, A, n, N 알파벳이 있는 단어의 수를 출력하시오.
+
+String str = new String("text");
+(결과)
+a(A), n(N)이 포함된 단어의 수 = k개
+
