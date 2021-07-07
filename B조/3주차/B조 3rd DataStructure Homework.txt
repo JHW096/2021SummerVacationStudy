@@ -1,0 +1,31 @@
+B조 3rd DataStructure Homework
+
+2. 연결리스트의 각 노드의 데이터는 각각의 큐에 대한 정보, 즉 큐의 front와 rear를 가지
+고 있다. 큐의 번호와 데이터를 주면 해당하는 큐에 데이터가 입력되고 큐의 번호를 주고
+삭제하기 원하면 해당하는 큐에서 삭제가 진행되다. (참고, 권영미 교수님 자료구조과제 3-2번)
+
+(배경 힌트)
+
+typedef int element;
+typedef struct linkedlist {
+	element data;
+	linkedlist* link;
+}linkedlist;
+
+typedef struct Queuelist {
+	linkedlist* front;
+	linkedlist* rear;
+	Queuelist* qlink;
+}Queuelist;
+
+typedef struct linktype {
+	Queuelist* head;
+	int length;
+}linktype;
+
+void error(const char* message);
+void init(linktype* plist);
+void init_queue(linktype* plist, int line);
+void add_queue(linktype* plist, int num, element val);
+void delete_queue(linktype* plist, int num);
+void showlist(linktype* plist);
