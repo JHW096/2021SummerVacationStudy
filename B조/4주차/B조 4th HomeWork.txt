@@ -1,0 +1,53 @@
+1. Data Structure
+(1) 이중연결리스트 구현
+hint)
+Header.h
+
+typedef type element;
+
+tyepdef struct Node {
+	element data;
+	Node* llink;
+	Node* rlink;
+}
+
+void init(Node* head);
+
+void insert(Node* before, element item); 
+
+void delete(Node* head, Node* removed);
+
+void print_list(Node* head);
+
+//추가 적인 함수는 자율입니다. 본인의 공부이기 때문에 시간이 남으시면
+필요한 기능들을 추가시켜보시길 바랍니다.
+
+(2) 기본 Queue구현
+// 5주차 과제에 대한 연습으로 기본Queue
+ 또는 연결리스트를 이용한 Queue를 구현해보시길 바랍니다.
+
+2. Java
+
+(1) Generic Stack 구현
+hint)
+c++의 경우
+template<class T>
+class Stack {
+
+}
+
+java의 경우
+class Gstack<T> {
+	int tos = -1;
+	Object [] stack;
+	//Object는 int, Double, String등 다양한 반환값의 조상(?)
+	//격이며, 객체 생성시 어떠한 타입으로도 변환이 가능합니다.
+}
+
+(2)수식 2.0*3.0-((4.0+5.0)*2.0)-4.0)= 에서 괄호나 사칙연산 기호를 의미하는
+피연산자를 각각 구분하여 처리할 수 있도록 StringTokenizer()함수를 이용하고,
+각 피연산자들의 합을 구하시오. 
+ex)
+2.0 * 3.0 - ( ( 이런식으로 한 칸씩 띠우고 StringTokenizer로 처리)
+
+각각의 피연산자들 2.0, 3.0, 4.0, 5.0, 2.0 등등 의 합 = 20.0
