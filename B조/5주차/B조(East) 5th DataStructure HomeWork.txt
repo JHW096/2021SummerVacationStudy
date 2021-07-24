@@ -1,0 +1,7 @@
+// 3주차 과제 그대로 해오기
+
+// Java 과제 미비한거 알아서 해오기
+
+// Swing, Graph User InterFace(GUI);
+
+// 예제 꼭 타이핑! JavaScript 비슷함! 꼭 해보셈!
